@@ -1,29 +1,29 @@
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
-
-[project]
+[tool.poetry]
 name = "nanogcg"
 version = "0.2.2"
-authors = [
-    { name="Justin Wang", email="justin@grayswan.ai" },
-]
+authors = ["Justin Wang <justin@grayswan.ai>"]               
 description = "A lightweight implementation of the GCG algorithm"
 readme = "README.md"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-]
-requires-python = ">=3.9"
-dependencies = [
-    "torch>=2.0",
-    "transformers>=4.4",
+classifiers = [ 
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
 ]
 
-[tool.setuptools]
-packages = ["nanogcg"]
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+priority = "primary"
 
-[project.urls]
-Homepage = "https://github.com/GraySwanAI/nanoGCG"
-Issues = "https://github.com/GraySwanAI/nanoGCG/issues"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+torch = "^2.0"
+transformers = "<=4.47.1"
+modelscope = "^1.21.0"
+accelerate = "^1.2.1"
+
