@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nanogcg"
-version = "0.2.2"
+version = "0.2.3"
 authors = ["Justin Wang <justin@grayswan.ai>"]               
 description = "A lightweight implementation of the GCG algorithm"
 readme = "README.md"
@@ -26,4 +26,6 @@ torch = "^2.0"
 transformers = "<=4.47.1"
 modelscope = "^1.21.0"
 accelerate = "^1.2.1"
-
+protobuf = "^5.29.3"
+scipy = "^1.7.0"
+sentencepiece = "^0.2.0"
