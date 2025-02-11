@@ -1,10 +1,10 @@
 [tool.poetry]
 name = "nanogcg"
-version = "0.2.3"
-authors = ["Justin Wang <justin@grayswan.ai>"]               
+version = "0.3.0"
+authors = ["Justin Wang <justin@grayswan.ai>"]
 description = "A lightweight implementation of the GCG algorithm"
 readme = "README.md"
-classifiers = [ 
+classifiers = [
   "Programming Language :: Python :: 3",
   "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent",
